@@ -100,56 +100,10 @@ Expected Output:
 - TensorBoard logs are saved in logs/fit/
 - Training and validation accuracy/loss graphs visible in TensorBoard
 
-4. Questions to Answer:
 
-1. What patterns do you observe in the training and validation accuracy curves?
-Ans: In the training and validation accuracy curves, the following patterns are commonly observed:
+      
 
-      - Training Accuracy:
-          - Increases consistently over epochs.
-          - Indicates the model is learning the training data well.
-
-      - Validation Accuracy:
-          - Initially rises along with training accuracy.
-          - May eventually plateau or decrease, depending on how well the model generalizes.
-
-     Key points:
-        - If both training and validation accuracy increase and stay close, it shows the model is generalizing effectively.
-        - If training accuracy keeps improving but validation accuracy stagnates or declines, it suggests overfitting.
-        - This pattern highlights the importance of using validation data to evaluate real-world performance.
-
-2. How can you use TensorBoard to detect overfitting?
-Ans: TensorBoard provides visual insights into model performance during training and validation.
-
-How to detect overfitting:
-- Monitor the training and validation loss curves:
-  - If "training loss decreases" while "validation loss increases", it's a sign of overfitting.
-- Look at the accuracy curves:
-  - If "training accuracy keeps increasing" but "validation accuracy stops improving or drops", overfitting is likely occurring.
-- Overfitting means the model is memorizing training data and failing to generalize to unseen data.
-- TensorBoard allows early detection so you can apply solutions like:
-  - Dropout layers
-  - Early stopping
-  - Data augmentation
-  - Reduced model complexity
-TensorBoard is an essential tool to visually catch overfitting by comparing training vs. validation performance in real time.
-
-3. What happens when you increase the number of epochs?
-Ans: 
-Training a model for more epochs allows it to learn from the data over a longer period of time.
-Effects of increasing epochs:
-- Initially:
-  - Both training and validation accuracy may improve.
-  - The model gets better at identifying patterns in the training data.
-
-- Eventually:
-  - Training accuracy continues to increase.
-  - Validation accuracy may stop improving or even decrease.
-This behavior indicates overfitting:
-- The model starts memorizing training data instead of learning general features.
-- Validation loss increases while training loss keeps decreasing.
-Finally, While more epochs can improve learning, too many can lead to overfitting and reduced generalization.
-
+ 
 
 
 
